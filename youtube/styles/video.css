@@ -1,0 +1,151 @@
+
+   
+   .thumbnail{
+      width:100%;
+      cursor:pointer;
+      
+   }
+   
+   .video-title,
+   .video-link{
+      width:200px;
+      margin-top:0px;
+
+      font-weight:bold  ;
+      font-size:14px;
+      line-height:20px;
+      margin-bottom:10px;
+      text-decoration:none;
+      color:black;
+      z-index:100;
+      
+   }
+   .video-author,
+    .video-stats{
+      display:block;
+     
+      color:rgba(93, 92, 92, 0.966);
+      font-size:12px;
+
+   }
+   .video-author{
+    margin-bottom:4px;
+   }
+   .video-stats{
+    margin-top:0px;
+   }
+  
+  
+  
+  .profile-picture{
+    width:36px;
+    border-radius:50px;
+    cursor:pointer;
+    position:relative;
+  }
+  .thumbnail-row{
+    margin-bottom:8px;
+    position:relative;
+  }
+  .video-info-grid{
+    display:grid;
+    grid-template-columns:50px 1fr;
+  }
+  .video-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:16px;
+    row-gap:15px;
+  }
+  @media (min-width: 1200.1px){
+    .video-grid{
+      padding-left:100px;
+    }
+  }
+  @media (max-width: 750px) {
+    .video-grid{
+      grid-template-columns:1fr 1fr;
+    }
+  }
+  @media (min-width:1000px) {
+    .video-grid{
+      grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+  }
+  @media (min-width:751px) and (max-width:999px){
+    .video-grid{
+      grid-template-columns:1fr 1fr 1fr;
+    }
+  }
+  body{
+    margin:0px;
+  }
+  .video-time{
+    background-color:black;
+    color:white;
+    position:absolute;
+    bottom:10px;
+    right:5px;
+
+    font-size:14px;
+    font-weight:bold;
+    
+    padding:4px ;
+    cursor:pointer;
+    border-radius:2px;
+    
+  }
+  .channel-picture-container{
+    position:relative;
+    display:inline-block;
+    z-index:1;
+  }
+  .channel-hover{
+    position:absolute;
+    box-shadow:1px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index:300;
+    display:flex;
+    align-items:center;
+    top:55px;
+    width:220px;
+    background-color:white;
+    height:80px;
+    border-radius:4px;
+    pointer-events:none;
+    opacity:0;
+    transition:opacity 0.15s;
+
+  }
+  .channel-picture-container:hover .channel-hover{
+    opacity:1;
+  }
+  
+  .profile-picture-hover{
+    width:60px;
+    height:60px;
+    border-radius:60px;
+    object-fit:cover;
+    margin-left:10px;
+  }
+  .texts{
+    display:block;
+    align-items:center;
+  }
+ 
+  .name
+  {
+    font-size:15px;
+    margin-left:10px;
+    font-weight:bold;
+    margin-top:12px;
+    margin-bottom:5px;
+
+    
+  }
+  .subscribers{
+    font-size:14px;
+    margin-left:10px;
+    margin-top:0px;
+    color:gray;
+  }
+ 
