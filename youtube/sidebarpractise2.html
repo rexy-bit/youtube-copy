@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <title>sidebar2</title>
+    <head>
+      <style>
+        .right-side{
+            position:fixed;
+            right:0px;
+            top:0px;
+            width:100px;
+            background-color:green;
+            top:0px;
+            height:100%;
+        }
+        .cover{
+            position:fixed;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            background-color:rgba(0,0,0,0.6);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .div{
+            width:200px;
+            height:150px;
+            background-color:white;
+            padding-top:20px;
+            padding-left:20px;
+            border-style:solid;
+            border-radius:10px;
+            border-color:lightgray;
+
+        }
+        .modal-title{
+            font-size:24px;
+            color:black;
+            font-family:arial;
+            font-weight:bold;
+            margin-bottom:10px;
+
+            
+        }
+        .text{
+            font-size:18px;
+            font-family:arial;
+            padding-bottom:10px;
+        }
+        button{
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-right:10px;
+            padding-left:10px;
+            background-color:lightgray;
+            font-size:18px;
+            font-family:arial;
+            cursor:pointer;
+            border-style:solid;
+            border-width:1px;
+            transition:opacity 0.25s;
+            border-radius:10px;
+        }
+        .button:hover{
+            opacity:0.8;
+        }
+        .button:active{
+            opacity:0.6;
+
+        }
+      </style>
+    </head>
+    <body style="
+    height:3000px;">
+        <div class="right-side">right-side</div>
+        <div class="cover">
+          <div class="div">
+            <div class="modal-title">
+                Modal Title
+            </div>
+            <div class="text">This is a modal</div>
+            <button class="button">Close</button>
+
+          </div>
+        </div>
+
+    </body>
+</html>

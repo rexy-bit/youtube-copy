@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <title>position.com</title>
+  <head>
+      <style class="close-button">
+        .close-button{
+            position:absolute;
+            left:-10px;
+            top:-10px;
+            background-color:black;
+            color:white;
+            font-size:15px;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-right:15px;
+            padding-left:15px;
+            font-family:arial;
+            cursor:pointer;
+            border-radius:20px;
+            transition:opacity 0.25;
+            z-index:1;
+        }
+        .close-button:hover{
+            opacity:0.8;
+        }
+        .close-button:active{
+            opacity:0.6;
+        }
+        .div{
+            position:fixed;
+            width:320px;
+            height:180px;
+            background-color:gray;
+            right:30px;
+            bottom:30px;
+            cursor:pointer;
+        }
+        .time{
+            position:absolute;
+            background-color:black;
+            color:white;
+            font-size:15px;
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-left:5px;
+            padding-right:5px;
+            font-style:arial;
+            bottom:5px;
+            right:5px;
+            font-weight:500;
+            cursor:pointer;
+        }
+
+      </style>
+  </head>
+  <body style="
+  height:3000px;">
+  
+
+  <div class="div">
+    
+    <div class="close-button">
+        X
+     </div>
+     <div class="time">2:00</div>
+  </div>
+    
+
+  </body>
+</hml>

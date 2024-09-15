@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <title>practiseposition3.com</title>
+    <head>
+      <style>
+        .product{
+            position:relative;
+            width:350px;
+            height:350px;
+            margin-right:20px;
+            margin-top:20px;
+            align-items:center;
+            background-color:lightblue;
+            cursor:pointer;
+            
+        }
+        .blouson{
+            width:300px;
+            height:300px;
+            object-fit:cover;
+            padding-top:20px;
+            padding-bottom:20px;
+            padding-left:20px;
+            padding-right:20px;
+        
+        }
+        .offer{
+            position:absolute;
+            top:10px;
+            right:0px;
+            color:white;
+            background-color:black;
+            font-size:12px;
+            font-family:arial;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:10px;
+            padding-right:10px;
+            font-weight:bold;
+        }
+        .cover{
+            bottom:0px;
+            right:0px;
+            left:0px;
+            top:200px;
+            background-color: rgba(255, 255, 255, 0.8);;
+            position:absolute;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:center;
+        }
+        .add {
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-right:10px;
+            padding-left:10px;
+            font-size:15px;
+            cursor:pointer;
+            border-style:solid;
+            border-width:1px;
+            border-radius:2px;
+            transition:background-color 0.5s;
+        }
+        .add:hover{
+            background-color:lightgray;
+        }
+        .add:active{
+            background-color:rgb(171, 171, 171);
+        }
+
+      </style>
+    </head>
+    <body style="
+    height:3000px;">
+        <div class="product">
+          <img src="thumbnails/Blouson.jpg" class="blouson">
+          <div class="offer">20&#37; OFF</div>
+          <div class="cover">
+             <button class="add">
+                Add to cart
+             </button>
+          </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <title>flexbox.com</title>
+    <head>
+       <style>
+         p{
+            font-family:arial;
+            margin-top:0px;
+            margin-bottom:0px;
+            margin-left:0px;
+            margin-right:0px;
+
+           
+         }
+         
+         
+       
+         .thediv{
+            display:flex;
+            flex-direction:row;
+            width:400px;
+            
+           
+            
+            
+           
+            
+            
+
+        }
+        .image{
+            width:50px;
+            height:50px;
+            border-radius:50px;
+            margin-right:15px;
+            object-fit:cover;
+            
+            
+        }
+        .tweet-column{
+            flex:1;
+        }
+        .text1{
+            font-size:15px;
+            font-weight:bold;
+            
+        }
+        .text2{
+            color:gray;
+            font-size:15px;
+            margin-left:3px;
+
+        }
+        .tweet-header{
+            display:flex;
+            flex-direction:row;
+            margin-bottom:5px;
+            font-family:arial;
+            
+        }
+        .text3{
+            line-height:20px;
+            margin-top:5px;
+            align-items:center;
+            font-size:15px;
+            font-family:arial;
+        }
+        .video-preview{
+            margin-top:20px;
+            display:flex;
+            flex-direction:row;
+            height:100px;
+            align-items:center;
+            border-color:rgb(201, 201, 201);
+            border-style:solid;
+            border-radius:20px;
+            border-width:1px;
+            overflow:hidden;
+            
+        }
+        .thumbnail{
+            width:100px;
+            height:100px;
+            background-color:rgb(201, 201, 201);
+            border-width:1px;
+            
+        }
+        .texts{
+                
+                width:300px;
+                
+
+        }
+        .youtube{
+            margin-left:5px;
+            color:rgb(79, 75, 75);
+            margin-bottom:3px;
+        }
+        .video-title{
+            margin-left:5px;
+            line-height:20px;
+        }
+       </style>
+    </head>
+    <body>
+        
+        
+        
+        <div class="thediv">
+           
+                 
+            
+            <div class="cat">
+                <img src="thumbnails/cat.jpg" class="image">
+            </div>
+            
+            <div class="tweet-column">
+              <div class="tweet-header">
+                <div class="text1">
+                supersimple.dev 
+                </div>
+              
+              
+                <div class="text2">
+                    &#x40;SuperSimpleDev
+                </div>
+             </div>
+
+            
+
+             <div class="text3">
+                What is backend web development? A complete overview. New video is up!
+             </div>  
+
+             <div class="video-preview">
+                 <div class="thumbnail"></div>
+                 <div class="texts">
+                     <div class="youtube">
+                        youtube.com
+                     </div>
+                     <div class="video-title">Backend web developement - a complete overview(2021)</div>
+                 </div>
+             </div>
+            </div>      
+        </div>
+        
+   
+    </body>
+</html>
